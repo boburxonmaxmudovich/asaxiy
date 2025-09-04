@@ -5,11 +5,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <title>Document like</title>
 </head>
 
 <body>
+    <header class="w-full border-b shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 flex items-center justify-between py-2 gap-[12px]">
+            <div class="flex items-center space-x-2">
+                <a href="#"><img src="./src/img/asaxiy-logo.svg" alt="logo" class="h-7"></a>
+            </div>
+            <div class="hidden md:flex items-center flex-1 mx-4">
+                <button class="bg-blue-600 transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-white px-[12px] py-[8px] rounded-[10px]  hover:text-blue-900 cursor-pointer">☰
+                    Категории</button>
+                <input type="text" placeholder="Поиск..." class="flex-1 border-[4px]  border-blue-600 px-2 py-1 ml-[9px] outline-none rounded-l-[10px]">
+                <button class="bg-blue-600 transition duration-300 ease-in-out transform  text-white px-[12px] py-[8px] rounded-r-[10px] cursor-pointer hover:text-blue-900">Искать</button>
+            </div>
+            <div class="flex items-center text-sm">
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <img class="sm:ml-[20px]" src="./src/img/header-icon1.svg" alt="">
+                    <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Сравнение</span>
+                </div>
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <img class="sm:ml-[15px]" src="./src/img/header-icon2.svg" alt="">
+                    <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Оплатить</span>
+                </div>
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <img class="sm:ml-[20px]" src="./src/img/header-icon3.svg" alt="">
+                    <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Отследить</span>
+                </div>
+                <div class="flex items-center sm:block w-[85px]  space-x-1 cursor-pointer">
+                    <a href="./shop.html">
+                        <img class="sm:ml-[17px]" src="./src/img/header-icon4.svg" alt="">
+                        <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Корзина</span>
+                    </a>
+                </div>
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <a href="./like.html">
+                        <img class="sm:ml-[24px]" src="./src/img/header-icon5.svg" alt="">
+                        <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Избранное</span>
+                    </a>
+                </div>
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <img class="sm:ml-[24px]" src="./src/img/header-icon6.svg" alt="">
+                    <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">O‘zbekcha</span>
+                </div>
+                <div class="hidden sm:block w-[85px] items-center space-x-1 cursor-pointer">
+                    <img class="sm:ml-[10px] " src="./src/img/header-icon7.svg" alt="">
+                    <span class="text-gray-700 transition duration-300 ease-in-out transform hover:text-blue-600">Войти</span>
+                </div>
+            </div>
+        </div>
 
+        <nav class="hidden md:flex justify-between space-x-6 py-2 text-sm text-gray-700 w-[1220px] ml-auto mr-auto">
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Супер цена</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">0-0-6</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Лучшее для
+                студентов</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Смартфоны</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Бытовая техника</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Книги</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Телевизоры</a>
+            <a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Ноутбуки</a>
+        </nav>
+
+        <div class="md:hidden flex items-center space-x-2 px-2 pb-2">
+            <button class="bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer  transition duration-300 ease-in-out transform">☰</button>
+            <input type="text" placeholder="Поиск..." class="flex-1 border-[4px] transition duration-300 ease-in-out transform border-blue-600 px-2 py-1 rounded-md">
+            <button class="bg-blue-600 text-white px-[12px] py-[8px] rounded-md cursor-pointer ml-[0]   transition duration-300 ease-in-out transform">🔍</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="w-full bg-[#f6f9fe] py-6">
+            <div class="max-w-[1392px] mx-auto px-4">
+                <h2 class="text-xl font-semibold mb-4">Liked Products</h2>
+
+                <!-- Placeholder rasm -->
+                <div id="placeholder" class="flex justify-center items-center h-60">
+                    <img src="./src/img/like.svg" alt="No liked items" class="opacity-50">
+                </div>
+
+                <!-- Liked products chiqadigan section -->
+                <div id="like-section" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+                    <!-- JS orqali liked kartalar chiqadi -->
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-600 py-10">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-white shadow-lg rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+
+                    <!-- Item 1 -->
+                    <div class="flex items-start space-x-3">
+                        <div><img src="./src/img/pluses1.svg" alt=""></div>
+                        <div>
+                            <h4 class="font-semibold">Больше не нужно ходить на базар</h4>
+                            <p class="text-sm text-gray-500">У нас выгодные цены и доставка до дома</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-start space-x-3">
+                        <div><img src="./src/img/pluses2.svg" alt=""></div>
+                        <div>
+                            <h4 class="font-semibold">Быстрая доставка</h4>
+                            <p class="text-sm text-gray-500">Наш сервис удивит вас</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-start space-x-3">
+                        <div><img src="./src/img/pluses3.svg" alt=""></div>
+                        <div>
+                            <h4 class="font-semibold">Удобства для вас</h4>
+                            <p class="text-sm text-gray-500">Быстрое оформление и гарантия на возврат в случае неисправности
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex items-start space-x-3">
+                        <div><img src="./src/img/pluses4.svg" alt=""></div>
+                        <div>
+                            <h4 class="font-semibold">Рассрочка</h4>
+                            <p class="text-sm text-gray-500">Без предоплаты на 3, 6 или 12 месяцев</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t mt-10">
+        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-5 gap-6 text-sm text-gray-700">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="font-semibold mb-2 hover:text-blue-600  transition duration-300 ease-in-out transform">Об Asaxiy
+                </h3>
+                <ul class="space-y-1">
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">О нас</a>
+                    </li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Карьера в
+                            Asaxiy</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Лицензии и
+                            сертификаты</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Политика
+                            Asaxiy</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="font-semibold mb-2 hover:text-blue-600  transition duration-300 ease-in-out transform">
+                    Покупателям</h3>
+                <ul class="space-y-1">
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Часто
+                            задаваемые вопросы</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Статус
+                            «El-yurt ishonchi»</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">«Asaxiy
+                            Plus»</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Договор
+                            публичной оферты</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Оферта для
+                            рассрочки</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Публичная
+                            оферта</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Оферта для
+                            онлайн-курсов</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <h3 class="font-semibold mb-2 hover:text-blue-600 transition duration-300 ease-in-out transform">
+                    Информации</h3>
+                <ul class="space-y-1">
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Наши
+                            бренды</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Новости</a></li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Блог</a>
+                    </li>
+                    <li><a class="hover:text-blue-600 transition duration-300 ease-in-out transform" href="#">Карта
+                            сайта</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="font-semibold mb-2 hover:text-blue-600  transition duration-300 ease-in-out transform">
+                    Доставка и магазины</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="flex items-center hover:text-blue-900 justify-between  transition duration-300 ease-in-out transform bg-gray-100 p-2 rounded-md">
+                            Наши магазины <span>›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-between bg-gray-100 p-2 rounded-md  transition duration-300 ease-in-out transform hover:text-blue-900">
+                            Пункты выдачи <span>›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-between bg-gray-100 p-2 rounded-md transition duration-300 ease-in-out transform hover:text-blue-900">
+                            Доставка <span>›</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div>
+                <h3 class="font-semibold mb-2 hover:text-blue-600 transition duration-300 ease-in-out transform">Для связи
+                </h3>
+                <ul class="space-y-2">
+                    <li class="flex items-center space-x-2 hover:text-blue-600">
+                        <img src="./src/img/footer-phone.svg" alt="">
+                        <span></span> <span>+998 71 200 01 05</span>
+                    </li>
+                    <li class="flex items-center space-x-2 hover:text-blue-600">
+                        <img src="./src/img/footer-email.svg" alt="">
+                        <span></span> <span>info@asaxiy.uz</span>
+                    </li>
+                    <li class="flex items-center space-x-2 hover:text-blue-600">
+                        <img src="./src/img/footer-telegram.svg" alt="">
+                        <span></span> <span>Telegram bot</span>
+                    </li>
+                    <li class="flex items-center space-x-2 hover:text-blue-600">
+                        <img src="./src/img/footer-location.svg" alt="">
+                        <span></span> <span>улица Гавхар 124, Ташкент</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Payment methods -->
+        <div class="max-w-7xl justify-between mx-auto px-4 py-6 flex flex-wrap">
+            <div>
+                <h3 class="font-semibold mb-3">Виды оплаты</h3>
+                <div class="flex gap-3">
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo1.svg" alt=""></a>
+                    </div>
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo2.svg" alt=""></a>
+                    </div>
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo3.svg" alt=""></a>
+                    </div>
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo4.svg" alt=""></a>
+                    </div>
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo5.svg" alt=""></a>
+                    </div>
+                    <div class="">
+                        <a href="#"><img src="./src/img/footer-logo6.svg" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <p class="">Мы в соц. сетях</p>
+                <div class="flex space-x-3 mt-3 md:mt-0">
+                    <a href="#" class="text-gray-500 text-xl"><img src="./src/img/footer-facebook.svg" alt=""></a>
+                    <a href="#" class="text-gray-500 text-xl"><img src="./src/img/footer-telegram2.svg" alt=""></a>
+                    <a href="#" class="text-gray-500 text-xl"><img src="./src/img/footer-instagram.svg" alt=""></a>
+                    <a href="#" class="text-gray-500 text-xl"><img src="./src/img/footer-youtube.svg" alt=""></a>
+                    <a href="#" class="text-gray-500 text-xl"><img src="./src/img/footer-web.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between border-t">
+            <p class="text-xs text-gray-500 hover:text-blue-600 transition duration-300 ease-in-out transform">2015 – 2025 Интернет-магазин asaxiy.uz: Бытовая техника и др. Доставка товаров осуществляется во все регионы. Все права защищены.</p>
+        </div>
+    </footer>
 </body>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
 
 </html>
